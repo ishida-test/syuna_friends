@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="common :: meta_header('要望・質問',~{::link},~{::script})">
+</head>
+<body>
+<div th:replace="common :: header"></div>
+<img src="img/question.jpg" id="question-background">
+<h1>質問・要望</h1>
+<!-- この部分はcssにて変更 -->
+<form method="post">
+    <!-- cssにて改行予定 -->
+    件名<input type="text" name="title">
+    内容<textarea name="content"></textarea>
+    <input type="submit" value="送信">
+    <!-- DBに登録できるようにする -->
+</form>
+</body>
+</html>

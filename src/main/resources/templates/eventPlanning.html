@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="common :: meta_header('イベント申請',~{::link},~{::script})">
+</head>
+<body>
+<div th:replace="common :: header"></div>
+<h1>イベント申請画面</h1>
+<form method="post">
+    <table border="1" width="800" cellspacing="0" cellpadding="5" bordercolor="#333333">
+        <tr>
+            <td width="600">
+                タイトル：<div></div>
+                内容：<div></div>
+                日時：<div></div>
+                場所：<div></div>
+                <!-- DBから引用予定 -->
+            </td>
+            <td width="200">
+                写真
+                <!-- DBから引用予定 -->
+            </td>
+        </tr>
+    </table>
+    <input type="submit" value="作成" name="eventPlanning">
+</form>
+
+
+</body>
+</html>

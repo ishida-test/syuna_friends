@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="common :: meta_header('イベント',~{::link},~{::script})">
+    <link rel="stylesheet" href="event.css" />
+</head>
+<body>
+    <div th:replace="common :: header"></div>
+    <img src="img/ritsu-event.jpg" id="event-background">
+    <h1>イベント情報</h1>
+    <!-- この部分はcssにて変更 -->
+    <table border="1" width="800" cellspacing="0" cellpadding="5" bordercolor="#333333">
+        <tr>
+            <td width="600">
+                タイトル：<div></div>
+                内容：<div></div>
+                日時：<div></div>
+                場所：<div></div>
+                <!-- DBから引用予定 -->
+            </td>
+            <td width="200">
+                写真
+                <!-- DBから引用予定 -->
+            </td>
+        </tr>
+    </table>
+    <table border="1" width="800" cellspacing="0" cellpadding="5" bordercolor="#333333">
+        <tr>
+            <td width="300">
+                <div>過去のイベント</div>
+                <div>・－－－－－－－－－－</div>
+                <div>・－－－－－－－－－－</div>
+                <!-- DBから引用予定 -->
+            </td>
+        </tr>
+    </table>
+    <a href="./eventPlanning">
+        イベントの企画はこちら！
+    </a>
+
+</body>
+</html>

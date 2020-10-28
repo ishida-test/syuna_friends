@@ -1,0 +1,60 @@
+header {
+    position: absolute;
+    width: 100%;
+
+	.nav {
+	    display: block;
+	    width: 100%;
+
+        #header-img{
+            display: block;
+            height: 350px;
+            width: 100%;
+            position: absolute;
+        }
+
+		.menu-group {
+		    display: flex;
+		    justify-content: space-around;
+		    list-style: none;
+		    padding-inline-start: 0px;
+		    align-items: flex-start;
+		    position: relative;
+
+            .icon {
+                flex-direction: column;
+
+                a {
+                    text-decoration: none;
+                    display: flex;
+                    flex-direction: column;
+                    color: #666;
+
+                    #schnaFriends {
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                        width: 150px;
+                    }
+
+                    .fa {
+                        color: #666;
+                        font-size: 3em;
+                        text-align: center;
+                    }
+                }
+            }
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+

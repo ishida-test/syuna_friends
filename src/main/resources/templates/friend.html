@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="common :: meta_header('お友達募集',~{::link},~{::script})">
+    <link rel="stylesheet" href="event.css" />
+</head>
+<body>
+<div th:replace="common :: header"></div>
+<img src="img/ritsu-event.jpg" id="friend-background">
+<h1>お友達募集</h1>
+<!-- この部分はcssにて変更 -->
+<table border="1" width="500" cellspacing="0" cellpadding="5" bordercolor="#333333">
+    <tr>
+        <td width="200">
+            写真を貼る場所<div></div>
+            <!-- urlにて対応 -->
+        </td>
+        <td width="200">
+            名前：<div></div>
+            年齢：<div></div>
+            性格：<div></div>
+            お気に入りスポット：<div></div>
+            飼い主さんから一言：<div></div>
+            <!-- DBから引用予定 -->
+        </td>
+    </tr>
+</table>
+<p>コメント</p>
+<!-- この部分はcssにて変更 -->
+<table border="1" width="500" cellspacing="0" cellpadding="5" bordercolor="#333333">
+    <tr>
+        <td width="200">
+            かわいいですね。<div></div>
+            <!-- DBから引用予定 -->
+            <input type="submit" value="削除依頼">
+        </td>
+    </tr>
+</table>
+</body>
+</html>
